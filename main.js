@@ -20,6 +20,7 @@ lampButton.addEventListener("click", function () {
   /* if (lampState === "OFF") { */
   if (lampImage.src.includes("white")) {
     lampImage.src = lightONPath;
+    lampImage.classList.add("lampON");
     lampButton.textContent = turnOFFCMD;
     lampButton.classList.remove("btn-warning");
     lampButton.classList.add("btn-primary");
@@ -27,6 +28,7 @@ lampButton.addEventListener("click", function () {
     consoleColor = "color: yellow";
   } else {
     lampImage.src = lightOFFPath;
+    lampImage.classList.remove("lampON");
     lampButton.textContent = turnONCMD;
     lampButton.classList.remove("btn-primary");
     lampButton.classList.add("btn-warning");
