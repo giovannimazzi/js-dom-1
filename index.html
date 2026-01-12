@@ -17,6 +17,22 @@
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>"
     />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
     <script src="./main.js" defer></script>
   </head>
   <body>
@@ -38,7 +54,15 @@
       >
         🔶🔹🔶🔹🔶🔷🔸🔷🔸🔷🔶🔹🔶🔹🔶🔷🔸🔷🔸🔷🔶🔹🔶🔹🔶🔷🔸🔷🔸🔷🔶🔹🔶🔹🔶🔷🔸🔷🔸🔷
       </marquee>
-      <div style="min-height: calc(100vh - 800px)">ESERCIZIO QUI</div>
+      <div class="d-flex justify-content-center align-items-center">
+        <img src="./img/img/white_lamp.png" alt="lamp" />
+        <button
+          type="button"
+          class="btn btn-warning border border-3 border-dark fw-bold p-3"
+        >
+          ACCENDI
+        </button>
+      </div>
       <marquee
         direction="right"
         behavior="scroll"
