@@ -4,6 +4,7 @@ const lightOFFPath = "./img/white_lamp.png";
 const turnONCMD = "ACCENDI";
 const turnOFFCMD = "SPEGNI";
 let lampState;
+let consoleColor;
 
 // selezione elementi del DOM da manipolare
 const lampImage = document.getElementById("lamp-img");
@@ -22,6 +23,14 @@ lampButton.addEventListener("click", function () {
     lampButton.classList.remove("btn-warning");
     lampButton.classList.add("btn-primary");
     lampState = "ON";
-    console.log(`STATO LAMPADA: ${lampState}`);
+    consoleColor = "color: yellow";
+  } else {
+    lampImage.src = lightOFFPath;
+    lampButton.textContent = turnONCMD;
+    lampButton.classList.remove("btn-primary");
+    lampButton.classList.add("btn-warning");
+    lampState = "OFF";
+    consoleColor = "color: cyan";
   }
+  console.log(`%cSTATO LAMPADA: ${lampState}`, consoleColor);
 });
