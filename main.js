@@ -24,9 +24,9 @@ lampButton.textContent = turnONCMD; // segnale di accensione luce
 
 // funzione che si attiva al click sul pulsante
 lampButton.addEventListener("click", function () {
-  if (lampState === "BROKEN") {
+  /*  if (lampState === "BROKEN") {
     return;
-  }
+  } */ // non serve in quanto si disabilita il pulsante in caso di BROKEN
   if (onOffCount < brokenThreshold - 1) {
     if (lampState === "OFF") {
       /* if (lampImage.src.includes("white")) { */
