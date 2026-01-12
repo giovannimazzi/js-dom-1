@@ -1,3 +1,7 @@
 .lampON {
   transform: translate(-41px, 0);
 }
+
+.lampBROKEN {
+  transform: translate(0, 0);
+}
