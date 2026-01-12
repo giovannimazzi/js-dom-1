@@ -32,5 +32,5 @@ lampButton.addEventListener("click", function () {
     lampState = "OFF";
     consoleColor = "color: cyan";
   }
-  console.log(`%cSTATO LAMPADA: ${lampState}`, consoleColor);
+  console.log(`STATO LAMPADA: %c${lampState}`, consoleColor);
 });
